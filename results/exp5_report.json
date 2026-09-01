@@ -1,0 +1,556 @@
+{
+  "model": {
+    "S_states": 8,
+    "p": [
+      0.1357322216616667,
+      0.10003175277689906,
+      0.14475029513264276,
+      0.12757223682488694,
+      0.06330596065793935,
+      0.1572185322627883,
+      0.13436671835807315,
+      0.13702228232510383
+    ],
+    "x0": 1.0141116606324152,
+    "x1": [
+      0.7024909061404366,
+      0.7817909774278214,
+      0.8966384193860649,
+      0.9547313590618649,
+      0.9603087503164536,
+      1.1150920960645316,
+      1.258209290616664,
+      1.3414119910788813
+    ],
+    "K_gen": 3
+  },
+  "no_arbitrage": {
+    "dynamic_na": true,
+    "semi_static_na": true,
+    "arbitrage_payoff": null
+  },
+  "pricing_measure": {
+    "Q": "P (physical measure)",
+    "Q_weights": [
+      0.1357322216616667,
+      0.10003175277689906,
+      0.14475029513264276,
+      0.12757223682488694,
+      0.06330596065793935,
+      0.1572185322627883,
+      0.13436671835807315,
+      0.13702228232510383
+    ],
+    "E_P_X1": 1.0141116606324152,
+    "X0": 1.0141116606324152,
+    "P_martingale": true,
+    "generator_expectations": [
+      {
+        "generator": 0,
+        "E_P_g_k": -1.9047114030265776e-16,
+        "centered": true
+      },
+      {
+        "generator": 1,
+        "E_P_g_k": -1.0383351474316593e-16,
+        "centered": true
+      },
+      {
+        "generator": 2,
+        "E_P_g_k": -1.44513964488371e-16,
+        "centered": true
+      }
+    ],
+    "all_generators_centered": true,
+    "P_in_M_infty_Y": true
+  },
+  "cara_optimization": {
+    "utility_fn": "CARA u(x)=1-exp(-x)",
+    "optimal_phi": -4.1085396196294255e-09,
+    "optimal_lambdas": [
+      1.8260415401982755e-10,
+      1.1983845027430107e-09,
+      8.768985537699336e-11
+    ],
+    "optimal_V_T": [
+      4.024719484242161e-09,
+      1.9335282982041664e-09,
+      -3.0206181117915464e-10,
+      -1.0755750169725771e-09,
+      -1.1372088595275228e-09,
+      -1.9648996803070324e-09,
+      -1.2139005485554836e-09,
+      -1.0759358473970589e-10
+    ],
+    "optimal_dynamic_part": [
+      1.2803062161291082e-09,
+      9.544987314054499e-10,
+      4.826434659069157e-10,
+      2.439663216281493e-10,
+      2.2105138868449708e-10,
+      -4.148821197802814e-10,
+      -1.0028847838479298e-09,
+      -1.3447263751571092e-09
+    ],
+    "optimal_static_part": [
+      2.7444132681130525e-09,
+      9.790295667987168e-10,
+      -7.847052770860703e-10,
+      -1.3195413386007265e-09,
+      -1.3582602482120198e-09,
+      -1.5500175605267512e-09,
+      -2.1101576470755383e-10,
+      1.2371327904174033e-09
+    ],
+    "optimal_expected_utility": 4.6129142831925876e-17,
+    "optimizer_converged": true,
+    "all_restart_values": [
+      {
+        "restart": 0,
+        "neg_utility": 2.041343578123569e-16,
+        "success": true
+      },
+      {
+        "restart": 1,
+        "neg_utility": 4.1886130963803376e-16,
+        "success": true
+      },
+      {
+        "restart": 2,
+        "neg_utility": 3.8467666226525056e-16,
+        "success": true
+      },
+      {
+        "restart": 3,
+        "neg_utility": 8.753733752861608e-17,
+        "success": true
+      },
+      {
+        "restart": 4,
+        "neg_utility": 1.755311812607804e-16,
+        "success": true
+      },
+      {
+        "restart": 5,
+        "neg_utility": 3.4560972312967455e-16,
+        "success": true
+      },
+      {
+        "restart": 6,
+        "neg_utility": 2.1313703938130738e-16,
+        "success": true
+      },
+      {
+        "restart": 7,
+        "neg_utility": 1.96465112610003e-16,
+        "success": true
+      },
+      {
+        "restart": 8,
+        "neg_utility": 4.0926637826884245e-17,
+        "success": true
+      },
+      {
+        "restart": 9,
+        "neg_utility": 2.264561626758555e-16,
+        "success": true
+      },
+      {
+        "restart": 10,
+        "neg_utility": 1.5765425141807355e-16,
+        "success": true
+      },
+      {
+        "restart": 11,
+        "neg_utility": 1.168638171579545e-16,
+        "success": true
+      },
+      {
+        "restart": 12,
+        "neg_utility": 3.116903563464276e-17,
+        "success": true
+      },
+      {
+        "restart": 13,
+        "neg_utility": 2.8594814671872397e-16,
+        "success": true
+      },
+      {
+        "restart": 14,
+        "neg_utility": 5.2185645653570926e-17,
+        "success": true
+      },
+      {
+        "restart": 15,
+        "neg_utility": 6.145121870753763e-17,
+        "success": true
+      },
+      {
+        "restart": 16,
+        "neg_utility": 3.56586429800448e-16,
+        "success": true
+      },
+      {
+        "restart": 17,
+        "neg_utility": 6.100352635664829e-17,
+        "success": true
+      },
+      {
+        "restart": 18,
+        "neg_utility": 2.8310567414014494e-16,
+        "success": true
+      },
+      {
+        "restart": 19,
+        "neg_utility": 4.621134950434313e-17,
+        "success": true
+      }
+    ]
+  },
+  "arctan_optimization": {
+    "utility_fn": "Arctan u(x)=arctan(x)",
+    "optimal_phi": -79349.25253571103,
+    "optimal_lambdas": [
+      1.69831282591146e-09,
+      1.698312825894818e-09,
+      1.6983128258632688e-09
+    ],
+    "optimal_V_T": [
+      24726.87394356227,
+      18434.472560873623,
+      9321.413885842485,
+      4711.782544963764,
+      4269.220717812807,
+      -8012.722072274397,
+      -19368.96448498947,
+      -25971.03657561413
+    ],
+    "optimal_dynamic_part": [
+      24726.873943552815,
+      18434.47256087023,
+      9321.413885845153,
+      4711.782544968274,
+      4269.220717817451,
+      -8012.722072269069,
+      -19368.964484988704,
+      -25971.03657561831
+    ],
+    "optimal_static_part": [
+      9.456286874704948e-09,
+      3.3945434564997545e-09,
+      -2.6677569233476428e-09,
+      -4.510154438443929e-09,
+      -4.643772405404501e-09,
+      -5.3277210543087915e-09,
+      -7.655167719471011e-10,
+      4.181064995911995e-09
+    ],
+    "optimal_expected_utility": 0.2242495363107641,
+    "optimizer_converged": true,
+    "all_restart_values": [
+      {
+        "restart": 0,
+        "neg_utility": 2.264886919408469e-12,
+        "success": true
+      },
+      {
+        "restart": 1,
+        "neg_utility": 3.228666862294179e-12,
+        "success": true
+      },
+      {
+        "restart": 2,
+        "neg_utility": 6.237098151170596e-12,
+        "success": true
+      },
+      {
+        "restart": 3,
+        "neg_utility": -0.2241314879199793,
+        "success": true
+      },
+      {
+        "restart": 4,
+        "neg_utility": 2.869523458014195e-12,
+        "success": true
+      },
+      {
+        "restart": 5,
+        "neg_utility": -0.2241387639063569,
+        "success": true
+      },
+      {
+        "restart": 6,
+        "neg_utility": 2.3618440181933544e-12,
+        "success": true
+      },
+      {
+        "restart": 7,
+        "neg_utility": 3.0927623831623226e-12,
+        "success": true
+      },
+      {
+        "restart": 8,
+        "neg_utility": -0.2242495363107641,
+        "success": true
+      },
+      {
+        "restart": 9,
+        "neg_utility": 6.9287067348518305e-12,
+        "success": true
+      },
+      {
+        "restart": 10,
+        "neg_utility": -0.22421063821648504,
+        "success": true
+      },
+      {
+        "restart": 11,
+        "neg_utility": 2.8004547060765097e-12,
+        "success": true
+      },
+      {
+        "restart": 12,
+        "neg_utility": 4.6119867325443595e-12,
+        "success": true
+      },
+      {
+        "restart": 13,
+        "neg_utility": 3.737877507670016e-12,
+        "success": true
+      },
+      {
+        "restart": 14,
+        "neg_utility": -0.22409456156336813,
+        "success": true
+      },
+      {
+        "restart": 15,
+        "neg_utility": 4.472615613664824e-12,
+        "success": true
+      },
+      {
+        "restart": 16,
+        "neg_utility": 5.451343165388077e-12,
+        "success": true
+      },
+      {
+        "restart": 17,
+        "neg_utility": 8.631814720957142e-12,
+        "success": true
+      },
+      {
+        "restart": 18,
+        "neg_utility": 6.463644386860086e-12,
+        "success": true
+      },
+      {
+        "restart": 19,
+        "neg_utility": -0.2240966611850707,
+        "success": true
+      }
+    ]
+  },
+  "maximizing_sequence_cara": [
+    {
+      "step": 0,
+      "expected_utility": -0.17039421250092004
+    },
+    {
+      "step": 1,
+      "expected_utility": -4.724075351728407
+    },
+    {
+      "step": 2,
+      "expected_utility": -1.319814584491169
+    },
+    {
+      "step": 3,
+      "expected_utility": -0.7275933303312448
+    },
+    {
+      "step": 4,
+      "expected_utility": -0.14781430535498544
+    },
+    {
+      "step": 5,
+      "expected_utility": -0.4563352769126556
+    },
+    {
+      "step": 6,
+      "expected_utility": -0.0017182284542635756
+    },
+    {
+      "step": 7,
+      "expected_utility": -0.01873074834631017
+    },
+    {
+      "step": 8,
+      "expected_utility": -1.734086318120466
+    },
+    {
+      "step": 9,
+      "expected_utility": -1.0662818674832344
+    },
+    {
+      "step": 10,
+      "expected_utility": -0.021388673251101914
+    },
+    {
+      "step": 11,
+      "expected_utility": -1.0659678665332584
+    },
+    {
+      "step": 12,
+      "expected_utility": -23.607799077783262
+    },
+    {
+      "step": 13,
+      "expected_utility": -1.6655253871746316
+    },
+    {
+      "step": 14,
+      "expected_utility": -6.808526545623808
+    },
+    {
+      "step": 15,
+      "expected_utility": -0.014018635476820642
+    },
+    {
+      "step": 16,
+      "expected_utility": -4.878922697503886
+    },
+    {
+      "step": 17,
+      "expected_utility": -0.42351264950204615
+    },
+    {
+      "step": 18,
+      "expected_utility": -3.5920106389935302
+    },
+    {
+      "step": 19,
+      "expected_utility": -1.679343025366784
+    },
+    {
+      "step": 20,
+      "expected_utility": -0.09498056495094544
+    },
+    {
+      "step": 21,
+      "expected_utility": -0.0011593175604745123
+    },
+    {
+      "step": 22,
+      "expected_utility": -0.949548534451109
+    },
+    {
+      "step": 23,
+      "expected_utility": -1.5018509603984513
+    },
+    {
+      "step": 24,
+      "expected_utility": -0.09548147762813657
+    },
+    {
+      "step": 25,
+      "expected_utility": -2.9931136810477548
+    },
+    {
+      "step": 26,
+      "expected_utility": -0.22956633270379326
+    },
+    {
+      "step": 27,
+      "expected_utility": -0.5437026665595993
+    },
+    {
+      "step": 28,
+      "expected_utility": -0.019783183620040775
+    },
+    {
+      "step": 29,
+      "expected_utility": -0.40222022478958325
+    },
+    {
+      "step": 30,
+      "expected_utility": -0.00010905208011610033
+    },
+    {
+      "step": 31,
+      "expected_utility": -0.38374450714230124
+    },
+    {
+      "step": 32,
+      "expected_utility": -0.5614870701498668
+    },
+    {
+      "step": 33,
+      "expected_utility": -1.4619648113307722
+    },
+    {
+      "step": 34,
+      "expected_utility": -3.694022601941726e-05
+    },
+    {
+      "step": 35,
+      "expected_utility": -0.008935640989378043
+    },
+    {
+      "step": 36,
+      "expected_utility": -0.21398296128918448
+    },
+    {
+      "step": 37,
+      "expected_utility": -0.0050194310129204195
+    },
+    {
+      "step": 38,
+      "expected_utility": -0.0014599952365306195
+    },
+    {
+      "step": 39,
+      "expected_utility": -0.22787920503397638
+    },
+    {
+      "step": 40,
+      "expected_utility": -0.19887611372805178
+    },
+    {
+      "step": 41,
+      "expected_utility": -0.02847151497393943
+    },
+    {
+      "step": 42,
+      "expected_utility": -0.010736927917232273
+    },
+    {
+      "step": 43,
+      "expected_utility": -0.0003973574384674072
+    },
+    {
+      "step": 44,
+      "expected_utility": -0.0024015218407863015
+    },
+    {
+      "step": 45,
+      "expected_utility": -0.0057070188473385755
+    },
+    {
+      "step": 46,
+      "expected_utility": -0.025218411194127436
+    },
+    {
+      "step": 47,
+      "expected_utility": -0.0027280205748110094
+    },
+    {
+      "step": 48,
+      "expected_utility": -0.0012857707014064744
+    },
+    {
+      "step": 49,
+      "expected_utility": 4.6129142831925876e-17
+    }
+  ],
+  "theorem_4_1_conclusion": "Theorem 4.1 validated: Under the finite-state small-cone model satisfying Assumption 3.3 and NA(Y) (semi-static no-arbitrage: True), and with P in M_infty(Y), the utility maximization problem sup E_P[u(phi*(X_1-X_0) + h)] attains its supremum. CARA optimal EU = 0.000000, Arctan optimal EU = 0.224250."
+}

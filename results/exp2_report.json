@@ -1,0 +1,66 @@
+{
+  "example_5_1": {
+    "name": "Example 5.1 (L^2-bounded)",
+    "is_truncated": true,
+    "K_generators_shown": 50,
+    "N_samples": 100000,
+    "SC1_convexity": "analytical",
+    "SC2_closed_L0": "analytical",
+    "SC3_bounded_L0": "passed",
+    "SC3_sup_tail_at_10": 0.0,
+    "SC3_sup_tail_at_100": 0.0,
+    "SC4_zero_excluded": true,
+    "qualifies_as_small_cone": true,
+    "analytical_notes": "Example 5.1: H_1 = {a_n * xi_n} with xi_n ~ N(0,1) i.i.d., a_n in [0.5, 2.0], truncated to K=50. Bounded in L^0 via sup P(|h|>=t) <= a_dagger^2/t^2 -> 0 (Chebyshev). Closure in L^0: each individual variable is L^2, and the closure of the convex hull is compact in L^2 and hence in L^0 by inclusion. Zero excluded: a_n >= a_star > 0 and xi_n are nondegenerate.",
+    "analytical_bound_at_10": 0.04,
+    "analytical_bound_at_50": 0.0016
+  },
+  "example_5_2": {
+    "name": "Example 5.2 (Cauchy, L^0-bounded only)",
+    "is_truncated": true,
+    "K_generators_shown": 50,
+    "N_samples": 100000,
+    "SC1_convexity": "analytical",
+    "SC2_closed_L0": "analytical",
+    "SC3_bounded_L0": "passed",
+    "SC3_sup_tail_at_10": 0.12659,
+    "SC3_sup_tail_at_100": 0.01279,
+    "SC4_zero_excluded": true,
+    "qualifies_as_small_cone": true,
+    "analytical_notes": "Example 5.2: H_2 = {c_n * zeta_n} with zeta_n ~ Cauchy(0,1) i.i.d., c_n in [0.5, 2.0], truncated to K=50. Bounded in L^0 via sup P(|h|>=t) <= 2/pi * arctan(c_dag/t) -> 0 as t->inf. KEY INSIGHT: L^0-boundedness holds despite E[|zeta_n|] = infinity. This example validates that small-cone structure is weaker than L^1/L^2 boundedness and hence applies to heavy-tailed payoff families. Zero excluded: c_n >= c_star > 0 and Cauchy r.v.s are nondegenerate.",
+    "analytical_bound_at_10": 0.12566591637800237,
+    "analytical_bound_at_50": 0.025451222695983666
+  },
+  "example_5_3": {
+    "name": "Example 5.3 (Finite-dim)",
+    "is_truncated": false,
+    "K_generators_shown": 4,
+    "N_samples": 100000,
+    "SC1_convexity": "analytical",
+    "SC2_closed_L0": "analytical",
+    "SC3_bounded_L0": "passed",
+    "SC3_sup_tail_at_10": 0.0,
+    "SC3_sup_tail_at_100": 0.0,
+    "SC4_zero_excluded": true,
+    "qualifies_as_small_cone": true,
+    "analytical_notes": "Example 5.3: H_3 = finite family of 4 linearly independent generators on S=10 states (uniform p). SC1: conv(H_3) is a polytope (closed and convex). SC2: Finite family => trivially closed in L^0. SC3: Bounded in L^0 since max |g_k| < inf on finite omega. SC4: All generators nonzero = True. Zero in conv(H_3) = False. (For SC4 we need 0 not in H_3, which holds since generators are nonzero.)",
+    "convex_hull_properties": {
+      "n_vertices": 4,
+      "linear_independent": true,
+      "diameter": 1.4142135623730951,
+      "zero_in_conv_hull": false,
+      "all_nonzero": true
+    }
+  },
+  "lemma_2_4": {
+    "nonredundancy": {
+      "nonredundancy": true,
+      "C_cap_neg_L_eq_zero": true,
+      "note": "K_0 \u2229 (-L) = {0} \u2014 small cone is nonredundant w.r.t. dynamic trading."
+    },
+    "closedness": {
+      "C_plus_L_closed": true,
+      "justification": "In a finite-state (finite-dimensional) setting, any finitely-generated cone C + L is closed in R^S (which is L^0 of the finite probability space). This directly illustrates Lemma 2.4's conclusion under the assumption that C \u2229 (-L) = {0}."
+    }
+  }
+}
